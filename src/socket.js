@@ -10,7 +10,7 @@ let _socket = null;
 export function getSocket() {
     if (!_socket) {
         const token = localStorage.getItem('token');
-        _socket = io('"https://jst-chat.onrender.com"', {
+        _socket = io("https://jst-chat.onrender.com", {
             auth: { token }
         });
     }
